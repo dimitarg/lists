@@ -14,5 +14,5 @@ sealed trait L[A] {
 }
 
 object L {
-
+  def fromStd[A](xs: List[A]): L[A] = ???
 }

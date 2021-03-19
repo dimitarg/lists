@@ -12,9 +12,9 @@ lazy val root = (project in file("."))
     testFrameworks += new TestFramework("weaver.framework.TestFramework"),
     libraryDependencies ++= List(
       "org.typelevel" %% "cats-core" % "2.4.2",
-      "io.github.dimitarg"  %%  "weaver-test-extra"     % "0.4.2" % "test"
+      "io.github.dimitarg"  %%  "weaver-test-extra"     % "0.4.2" % "test",
+       "com.disneystreaming" %% "weaver-scalacheck" % "0.5.1" 
 
     )
   )
 
-// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
