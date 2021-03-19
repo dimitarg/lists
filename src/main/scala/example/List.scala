@@ -10,7 +10,7 @@ sealed trait L[A] {
 
   def map[B](f: A => B): L[B] = ???
 
-  def traverse[F[_]: Applicative, B](f: A => F[B]): F[List[B]] = ???
+  def traverse[F[_]: Applicative, B](f: A => F[B]): F[L[B]] = ???
 }
 
 object L {
